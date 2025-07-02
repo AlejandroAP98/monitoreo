@@ -22,7 +22,7 @@ jobs:
     with:
       host: ${{ secrets.EC2_HOST }}
       username: ${{ secrets.EC2_USER }}
-      key: ${{ secrets.EC2_KEY }}
+      key: ${{ secrets.SSH_PRIVATE_KEY}}
       script: |
         IMAGE_NAME="${{ steps.vars.outputs.IMAGE_NAME }}"
         docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GHCR_PAT }}
