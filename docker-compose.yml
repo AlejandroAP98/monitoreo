@@ -37,8 +37,8 @@ services:
       - monitoring_network
     environment:
       - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=admin # Cambia esto por una contraseña más segura en producción
-      - GF_INSTALL_PLUGINS=grafana-piechart-panel # Opcional: instala plugins de Grafana si los necesitas
+      - GF_SECURITY_ADMIN_PASSWORD=admin 
+      - GF_INSTALL_PLUGINS=grafana-piechart-panel 
 
 networks:
   monitoring_network:
